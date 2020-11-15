@@ -21,3 +21,7 @@ p
 bgcolor
 background
 diseño bonito
+
+https://github.com/Fabian948/ari1m_01_html/blob/master/html.html
+
+Las url que no funcionan es porque no las tengo
