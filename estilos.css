@@ -1,0 +1,105 @@
+body{
+	background-color:#d9d9d9;
+	text-align: center; 
+}
+#div_global{
+	height:1753.91px;
+}
+#div_tabla1{
+	height:90px;
+}
+#tabla1{
+	display:inline-block;
+}
+#tabla1_td1{
+	background:url('img/titulohtml.jpg');
+	height:84.875px;
+}
+#td1_span1{
+	color:#d9d9d9;
+}
+#td1_span2{
+	text-decoration:underline;
+}
+#td1_span3{
+	color:#d9d9d9;
+}
+#div_tabla2{
+	height:92px;
+}
+#tabla2{
+	display:inline-block;
+	text-align:left;
+}
+.titulo_1{
+	font-style: italic;
+}
+#tabla3{
+	display:inline-block;
+	text-align:left;
+	width:615px;
+}
+.espacio_1{
+	height:14px;
+}
+#img1{
+	height:22.04em;
+}
+#tabla4{
+	display:inline-block;
+	text-align:left;
+	width:615px;
+}
+#img2{
+	height:29.39em;
+}
+.espacio_2{
+	height:36px;
+}
+#tabla6{
+	display:inline-block;
+	text-align:left;
+	width:50%;
+}
+#tabla6_td1{
+	width:476px;
+}
+#tabla6_td2{
+	height:64.44px;
+	width:230px;
+}
+#tabla6_td3{
+	height:64.44px;
+	width:233px;
+}
+#espacio_3{
+	height:32px;
+}
+#tabla5{
+	display:inline-block;
+	text-align:left;
+	width:100%;
+}
+#tabla5_td1{
+	width:10%;
+}
+#tabla5_td2{
+	width:60%;
+}
+#compa{
+	color:#003300;
+	font-weight:bold;
+}
+#ni_idea_de_que_poner{
+	color:#803300;
+	font-weight:bold;
+}
+#tabla5_td3{
+	width:20%;
+}
+#espacio_4{
+	height:18px;
+}
+#tabla5_td4{
+	width:10%;
+}
