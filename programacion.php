@@ -5,9 +5,9 @@
 	</head>
 	<body>
 		<h1>Ley de ohm</h1>
-		<form>
-		<input id="v" name="v" placeholder="Voltaje" value="1" onkeyup="calculo()"/>
-		<input id="r" name="r" placeholder="Resistencia" value="1" onkeyup="calculo()"/>
+			<form>
+			<input id="v" name="v" placeholder="Voltaje" value="1" onkeyup="calculo()"/>
+			<input id="r" name="r" placeholder="Resistencia" value="1" onkeyup="calculo()"/>
 		<button onclick="calculo()">Calcular</button>
 		</form>
 		<div id="I" style="
