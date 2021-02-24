@@ -80,7 +80,7 @@ foreach($provincias as $var1){
 		$numero = strlen($var1['autonomia']);
 		$menor=$var1;
 		echo $menor['autonomia'] . " con " . $numero . " caracteres";
-	}
+	} 
 }
 ?>
 
@@ -95,13 +95,30 @@ foreach($provincias as $var1){
 $name ="Galicia";
 $cont = 0;
 foreach($provincias as $var2){
-	if($name = $var2['autonomia']){
+	if($name == $var2['autonomia']){
 		$cont = $cont + 1;
-		echo $name . " tiene " . $cont;
 	}
 	else{
+		echo $name . " tiene " . $cont."<br/>";
 		$name = $var2['autonomia'];
-		$cont = 0;
+		$cont = 1;
 	}
 }
+?>
+
+<?php
+$name2 ="Galicia";
+$name0 = ' ';
+$cont2 = 0;
+$cont0 = ' ';
+
+foreach($provincias as $var3){
+	if($name2 == $var2['autonomia']){
+		$cont2 = $cont2 + 1;
+	} elseif {
+		
+	}	
+		
+		
+		
 ?>
