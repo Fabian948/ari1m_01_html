@@ -60,65 +60,135 @@ foreach($provincias as $i=>$p) foreach($p as $j=>$dato){
 	unset($provincias[$i][$j]);
 }
 
-
-
-
-
 ?>
+
+
 <script>
 provincias=<?=json_encode($provincias)?>;
 console.log(provincias);
 </script>
+
+
+
 
 <h2>(29) ¿Cuánto mide el nombre de autonomía más corto?</h2>
 <?php
 
 $numero = 100;
 $menor = " ";
+
 foreach($provincias as $var1){
 	if($numero > strlen($var1['autonomia'])){
 		$numero = strlen($var1['autonomia']);
 		$menor=$var1;
-		echo $menor['autonomia'] . " con " . $numero . " caracteres";
+		echo $menor['autonomia'] . " con " . $numero . " caracteres.";
 	} 
 }
+
 ?>
+<div id="s1"></div>
+<script>
+
+numero = 100;
+menor = " ";
+
+for(i=0 ; i<provincias.length ; i++){
+	document.getElementById("s1").innerHTML += provincias[i]["autonomia"] + "<br/>";
+
+</script>
 
 
 
-
-
-
-
-
+<h2>(38) ¿Cuántas provincias tiene cada comunidad autónoma?</h2>
 <?php
-$name ="Galicia";
-$cont = 0;
-foreach($provincias as $var2){
-	if($name == $var2['autonomia']){
-		$cont = $cont + 1;
-	}
-	else{
-		echo $name . " tiene " . $cont."<br/>";
-		$name = $var2['autonomia'];
-		$cont = 1;
+
+$as=[];
+$pob=0;
+
+foreach($provincias as $pa)
+  $as[$pa['autonomia']]=0;
+  
+foreach($provincias as $pa)
+  $as[$pa['autonomia']]++;
+  
+foreach($as as $pi=>$pe)
+echo $pi . " tiene " . $pe. " provincia/as." . "<br/>";
+
+?>
+<div id="s2"></div>
+<script>
+
+</script>
+
+
+
+
+<h2>(46) Autonomía con más provincias</h2>
+<?php
+
+$aut  = 0;
+$prov = 0;
+
+foreach($as as $pi=>$pe){
+	if($prov <= $pe){
+		$prov = $pe;
+		$aut  = $pi;
 	}
 }
-?>
 
+echo $aut  . " es la autonomia con mas provincias con " .  $prov . ".";
+
+?>
+<div id="s3"></div>
+<script>
+
+</script>
+
+
+
+
+<h2>(08) Provincias que contienen el diptongo ue</h2>
+<?Php
+
+$op =[];
+
+foreach($provincias as $var4){
+	if(strstr($var4['provincia'],"ue")){
+		$op[] = $var4['provincia'];
+	}
+}
+
+foreach($op as $ra)
+	echo $ra. "." . "<br/>";
+	
+?>
+<div id="s4"></div>
+<script>
+
+</script>
+
+
+
+
+<h2>(15) Autonomías que comiencen por can ordenadas alfabéticamente</h2>
 <?php
-$name2 ="Galicia";
-$name0 = ' ';
-$cont2 = 0;
-$cont0 = ' ';
 
-foreach($provincias as $var3){
-	if($name2 == $var2['autonomia']){
-		$cont2 = $cont2 + 1;
-	} elseif {
-		
-	}	
-		
-		
-		
+$ki =[];
+
+foreach($provincias as $var5){
+	if(strstr($var5['autonomia'],"Can")){
+		$ki[] = $var5['autonomia'];
+	}
+}
+
+asort($ki);
+
+foreach(array_unique($ki) as $o){
+		echo $o. "." ."<br/>";
+}
+
 ?>
+<div id="s5"></div>
+<script>
+
+</script>
